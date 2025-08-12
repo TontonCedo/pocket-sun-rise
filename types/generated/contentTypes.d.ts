@@ -488,6 +488,9 @@ export interface ApiRegionRegion extends Struct.CollectionTypeSchema {
     RegionDescription: Schema.Attribute.Text;
     RegionID: Schema.Attribute.UID<'RegionName'> & Schema.Attribute.Required;
     RegionImage: Schema.Attribute.Media<'images'>;
+    RegionJPName: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     RegionName: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique &
@@ -498,6 +501,9 @@ export interface ApiRegionRegion extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Visible: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
   };
 }
 

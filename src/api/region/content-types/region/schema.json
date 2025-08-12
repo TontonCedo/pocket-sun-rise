@@ -22,6 +22,11 @@
       "required": true,
       "unique": true
     },
+    "RegionJPName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "RegionSubName": {
       "type": "string"
     },
@@ -49,6 +54,11 @@
         "Kyushu",
         "Okinawa"
       ]
+    },
+    "Visible": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   }
 }
