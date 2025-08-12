@@ -1,5 +1,5 @@
 {
-  "name": "my-strapi-project",
+  "name": "pocketSunRise",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -37,5 +37,9 @@
   "strapi": {
     "uuid": "bdbe741a-42f8-4c42-b776-42dcc384a3c3",
     "installId": "ceccdb7ca39e8261e480c0614b02d6cb8fdddb16c96df3889655141bc48ccad3"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/TontonCedo/PocketSunRise",
+  "author": "CedricLanglois <cedriclanglois@icloud.com>",
+  "license": "MIT"
 }

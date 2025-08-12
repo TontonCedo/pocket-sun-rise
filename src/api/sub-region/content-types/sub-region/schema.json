@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_regions",
+  "info": {
+    "singularName": "sub-region",
+    "pluralName": "sub-regions",
+    "displayName": "SubRegion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SubRegionName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "SubRegionID": {
+      "type": "uid",
+      "targetField": "SubRegionName",
+      "required": true,
+      "maxLength": 5
+    },
+    "SubRegionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subGuideJPName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subRegionDescription": {
+      "type": "text",
+      "required": true
+    },
+    "region": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::region.region"
+    }
+  }
+}
